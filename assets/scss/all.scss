@@ -1,0 +1,10 @@
+// BS5
+@import "bootstrap/scss/functions";
+@import "./base/variables";
+@import "bootstrap/scss/bootstrap";
+
+@import "./base/typography";
+@import "./base/base";
+@import "./base/custom";
+
+@import './pages/index.scss';
