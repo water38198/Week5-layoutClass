@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+
+  <title>Week5</title>
+  <script type="module" crossorigin src="/week5-layoutClass/assets/main-f1360ec1.js"></script>
+  <link rel="stylesheet" href="/week5-layoutClass/assets/main-b01c8bf1.css">
+</head>
+
+<body>
+  <!-- 左邊固定選單 -->
+  <nav class="nav-side bg-light d-flex flex-column py-32 position-fixed">
+    <h1 class="mb-32 ps-32">
+      <a href="">
+        <img src="/week5-layoutClass/assets/logo-ANSWER-a11e3fef.svg" alt="logo">
+      </a>
+    </h1>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a href="#" class="nav-link link-dark fw-bold d-flex align-items-center ps-32"><span
+            class="material-icons me-3">assessment</span>Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link link-dark fw-bold d-flex align-items-center ps-32">
+          <span class="material-icons me-3">question_answer</span>Question</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link fw-bold link-dark d-flex align-items-center active"><span
+            class="material-icons me-3">assignment</span>Assignment</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link link-dark fw-bold d-flex align-items-center ps-32"><span
+            class="material-icons me-3">video_library</span>Course</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link link-dark fw-bold d-flex align-items-center ps-32"><span
+            class="material-icons me-3">supervisor_account</span>Admin</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link fw-bold link-dark d-flex align-items-center ps-32"><span
+            class="material-icons me-3">settings</span>Settings</a>
+      </li>
+    </ul>
+    <div class="user d-flex mt-auto ms-32">
+      <img src="/week5-layoutClass/assets/andychen-f14fef59.jpeg" alt="a man with glass" class="block rounded-circle me-3 user-img">
+      <div class="d-flex flex-column justify-content-between lh-1">
+        <span>Andy Chen</span>
+        <span class="fs-14 text-secondary d-block mt-1">andy0401@mail.com</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 中間內容 -->
+  <main class="main p-32">
+    <div class="container px-0">
+      <!-- 上方標題 -->
+      <div class="d-flex align-items-center text-dark fw-bold mb-5">
+        <h2 class="me-5">Assignment</h2>
+        <div class="dropdown d-flex align-items-center">
+          All Courses
+          <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="ms-2 d-flex"><span
+              class="material-icons text-success">expand_more</span></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <a href="#" class="d-flex  ms-auto"><span class="material-icons">
+            search
+          </span> </a>
+        <a href="#" class="d-flex ms-4"><span class="material-icons">
+            notifications_active
+          </span> </a>
+      </div>
+
+      <div class="row">
+        <!-- 左邊摺疊選單 -->
+        <div class="col-4">
+          <div class="mb-1">
+            <a class="d-flex fw-bold" data-bs-toggle="collapse" href="#all-items" role="button" aria-expanded="false"
+              aria-controls="all-items">
+              All (4)<span class="material-icons text-success ms-2">expand_more</span></a>
+            </a>
+          </div>
+          <div class="collapse-list list-group collapse" id="all-items">
+            <a href="#" class="list-group-item list-group-item-action bg-light" aria-current="true">
+              <div class="mb-1 d-flex justify-content-between">
+                <span class="fs-12">Chapter Assignment 2</span>
+                <span class="fs-12">4 hrs ago</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold collapse-list-title text-truncate">Please check this file to somebody I
+                  like</span>
+                <span class="fs-12 text-secondary">Emily Wang</span>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="mb-1 d-flex justify-content-between">
+                <span class="fs-12">Chapter Assignment 1</span>
+                <span class="fs-12">12 hrs ago</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold collapse-list-title text-truncate">My Homework</span>
+                <span class="fs-12 text-secondary">David Xu</span>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="mb-1 d-flex justify-content-between">
+                <span class="fs-12">Final Assignment</span>
+                <span class="fs-12">18 hrs ago</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold collapse-list-title text-truncate">Have a problem with this issue</span>
+                <span class="fs-12 text-secondary">Tony Wei</span>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="mb-1 d-flex justify-content-between">
+                <span class="fs-12">Final Assignment</span>
+                <span class="fs-12">19 hrs ago</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold collapse-list-title text-truncate">Did I do it right?</span>
+                <span class="fs-12 text-secondary">Christina Lin</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- 右邊卡片內容 -->
+        <div class="col-8">
+          <div class="card-title text-end fs-12 text-secondary mb-2">
+            2 comments
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-header">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <span class="d-block fs-12 mb-1">Chapter Assignment 2 / HTML&CSS</span>
+                  <span class="d-block fw-bold">Please check this file for me, thanks!</span>
+                </div>
+                <div class="dropdown">
+                  <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="material-icons">
+                      more_vert
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <!-- 原內容 -->
+              <div class="d-flex">
+                <img src="/week5-layoutClass/assets/emilywang-cc5a821b.jpeg" alt=""
+                  class="d-block rounded-circle user-img me-2 flex-shrink-0">
+                <div class="pe-32 border-bottom pb-3 mb-3">
+                  <h3 class="fs-6 mb-1">Emily Wang</h3>
+                  <span class="d-block fs-12 text-secondary mb-3">10:38 AM (4 hours ago)</span>
+                  <p class="fs-14">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question:
+                    Why in the
+                    following code the
+                    height of the <span class="text-success bg-light">div</span> is bigger than the height of the <span
+                      class="text-success bg-light">img</span> ?
+                    There is a gap below the image, but it
+                    doesn’t seems to be a padding/margin.<br>What is the gap or extra space below image?</p>
+                  <button class="btn btn-light border border-1 rounded-0 d-flex py-2 pe-3" download="...">
+                    <span class="material-icons me-2">attach_file</span>
+                    <span class="fw-bold">HW-2-David.zip</span>
+                  </button>
+                </div>
+              </div>
+              <!-- 回覆內容 -->
+              <div class="d-flex">
+                <img src="/week5-layoutClass/assets/andychen-f14fef59.jpeg" alt=""
+                  class="d-block rounded-circle user-img me-2 flex-shrink-0">
+                <div class="pe-32 ">
+                  <div class="d-flex align-items-center">
+                    <div class="me-auto">
+                      <h3 class="fs-6 mb-1">Andy Chen (You)</h3>
+                    </div>
+                    <div>
+                      <a href="#" class="me-4">
+                        <span class="material-icons">star_outline</span>
+                      </a>
+                      <a href="#">
+                        <span class="material-icons">edit</span>
+                      </a>
+                    </div>
+                  </div>
+                  <span class="d-block fs-12 text-secondary mb-3">13:24 AM (1 hours ago)</span>
+                  <p class="fs-14">Hi David, by default, an image is rendered inline, like a letter so it sits on the
+                    same line that a, b, c and d sit on.
+                    There is space below that line for the descenders you find on letters like g, j, p and q. <br>
+                    <br>
+                    You can:
+                    <br>
+                    <br>
+                  <ul>
+                    <li>adjust the <span class="text-success bg-light">vertical-align</span> of the image to position it
+                      elsewhere (e.g. the middle ) or</li>
+                    <li>change the <span class="text-success bg-light">display</span> so it isn’t inline.</li>
+                  </ul>
+                  </p>
+                  <button class="btn btn-light border border-1 rounded-0 d-flex py-2 pe-3">
+                    <span class="material-icons me-2">attach_file</span>
+                    <span class="fw-bold">HW-2-David.zip</span>
+                  </button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 分頁、回覆 -->
+          <div class="d-flex">
+            <nav aria-label="Page navigation" class="me-auto">
+              <ul class="pagination mb-0">
+                <li class="page-item">
+                  <a class="page-link border-0 link-dark d-flex" href="#" aria-label="Previous">
+                    <span class="material-icons">
+                      chevron_left
+                    </span>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link border-0 link-dark d-flex" href="#" aria-label="Next">
+                    <span class="material-icons">
+                      chevron_right
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div>
+              <button class="btn btn-outline-success me-3 px-32 fw-bold">Mark as read</button>
+              <button class="btn btn-success px-32 fw-bold">Reply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+
+
+
+  
+</body>
+
+</html>
